@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+        <class name="hibernate.model.Phone" table="phones">
+                <meta attribute="class-description">
+                        This class contains developer's details.
+                </meta>
+                <id name="id" type="int" column="id">
+                        <generator class="native"/>
+                </id>
+                <property name="user_id" column="user_id" type="int"/>
+                <property name="phone_number" column="phone_number" type="string"/>
+        </class>
+</hibernate-mapping>
